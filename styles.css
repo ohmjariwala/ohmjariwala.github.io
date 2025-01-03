@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 2rem;
     min-height: 100vh;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
     background-color: var(--bg-color);
     line-height: 1.6;
     color: var(--text-color);
