@@ -1,51 +1,59 @@
 :root {
-    --bg-color: #161515;
-    --text-color: #e3d6d6;
+    --bg-color: #101010;
+    --text-color: #e0e0e0;
     --heading-color: #ffffff;
     --border-color: #333333;
-    --hover-color: #2d2d2d;
+    --hover-color: #1e1e1e;
     --accent-color: #3b76b9;
 }
 
 body {
     margin: 0;
-    padding: 2rem;
+    padding: 0;
     min-height: 100vh;
-    font-family: Garamond, "EB Garamond", "Times New Roman", serif;
+    font-family: "Arial", sans-serif;
     background-color: var(--bg-color);
-    line-height: 1.6;
     color: var(--text-color);
+    line-height: 1.8;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
 h1 {
     color: var(--heading-color);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 h2 {
     color: var(--heading-color);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 0.5rem;
     font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
 }
 
 section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+section p, section ul {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 ul {
-    padding-left: 1.2rem;
+    list-style: square inside;
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -54,77 +62,46 @@ li {
 
 .social-links, .email-links {
     display: flex;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    gap: 1.2rem;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .social-links a, .email-links a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
     text-decoration: none;
+    font-size: 1.2rem;
     color: var(--text-color);
-    padding: 0.8rem 1.2rem;
-    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    background-color: var(--hover-color);
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .social-links a:hover, .email-links a:hover {
-    background-color: var(--hover-color);
-    transform: translateY(-2px);
+    transform: scale(1.05);
+    background-color: var(--accent-color);
+    color: #fff;
 }
 
 .fa-github, .fa-linkedin, .fa-envelope {
     font-size: 1.2rem;
-    color: var(--accent-color);
 }
 
-@media (max-width: 600px) {
-    body {
-        padding: 1rem;
-    }
-    
+@media (max-width: 768px) {
     .container {
         padding: 1rem;
     }
-    
-    .social-links, .email-links {
-        flex-direction: column;
-        gap: 0.8rem;
-    }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     h2 {
         font-size: 1.5rem;
     }
-} 
 
-.animate-letter {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.3s ease forwards;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .social-links, .email-links {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
-
-.animate-letter:nth-child(1) { animation-delay: 0.1s; }
-.animate-letter:nth-child(2) { animation-delay: 0.2s; }
-.animate-letter:nth-child(3) { animation-delay: 0.3s; }
-.animate-letter:nth-child(4) { animation-delay: 0.4s; }
-.animate-letter:nth-child(5) { animation-delay: 0.5s; }
-.animate-letter:nth-child(6) { animation-delay: 0.6s; }
-.animate-letter:nth-child(7) { animation-delay: 0.7s; }
-.animate-letter:nth-child(8) { animation-delay: 0.8s; }
-.animate-letter:nth-child(9) { animation-delay: 0.9s; }
-.animate-letter:nth-child(10) { animation-delay: 1.0s; }
-.animate-letter:nth-child(11) { animation-delay: 1.1s; }
-.animate-letter:nth-child(12) { animation-delay: 1.2s; } 
