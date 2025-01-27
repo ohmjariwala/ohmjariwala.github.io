@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#projects">Projects</a>
+            <a href="#passions">Passions</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
     <div class="container">
         <h1>
             <span class="animate-letter">O</span>
@@ -24,27 +34,49 @@
             <span class="animate-letter">a</span>
         </h1>
         
-        <section class="about">
+        <section id="about" class="about">
             <h2>About Me</h2>
             <p>Studying Quantitative Finance @ Stevens Institute of Technology (12/2025). Transferred from Rutgers University- New Brunswick (2023)</p>
         </section>
 
-        <section class="experiences">
-            <h2>Experiences</h2>
+        <section id="experiences" class="experiences">
+            <h2>Professional Experience</h2>
             <ul>
-                <li>Currently building a Graduate Student Managed Investment Fund (GSMIF) @ Stevens (ETF portfolio)</li>
+                <li>Currently building a Graduate Student Managed Investment Fund (GSMIF) @ Stevens (Global Macro portfolio)</li>
                 <li>Former Head of Quantitative Investment Solutions for the Stevens Student Managed Investment Fund - SSMIF (Long Only US Equity and Fixed Income Securities)</li>
                 <li>Quant Research @ Everhaven Securities (prev. 328 Capital Partners)</li>
                 <li>Former Client Services Intern: Private Placement Life Insurance and Variable Annuities @ Winged Keel Group</li>
             </ul>
         </section>
 
-        <section class="passions">
+        <section id="projects" class="projects">
+            <h2>Personal Projects</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>Quant Finance Interview Tool</h3>
+                    <p>Full Stack platform that generates interview questions, has a library of practice problems, and includes a mental math feature (similar to zetamac)</p>
+                    <p class="project-status">Status: Currently in testing and deployment phases</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Mean Variance Asset Allocation using LSTM</h3>
+                    <p>Using Markowitz Portfolio Theory in conjunction with an LSTM (Long Short-Term Memory) neural network to forecast asset returns and construct a forward-looking efficient frontier.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>VaR and Expected Shortfall</h3>
+                    <p>Measures Value at Risk (VaR) and Expected Shortfall (ES) for a portfolio in three different ways: Parametric (Variance-Covariance), Monte Carlo Simulation, and GARCH (time-varying volatility).</p>
+                    <p class="project-status">Note: Can be built upon to develop more rigorous VaR models</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="passions" class="passions">
             <h2>Passions</h2>
             <p>Building out new ideas, Poker, Table Tennis, Tennis, Basketball</p>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2>Contact</h2>
             <div class="email-links">
                 <a href="mailto:ohmjariwala@gmail.com">
