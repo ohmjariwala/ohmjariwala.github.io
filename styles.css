@@ -144,13 +144,13 @@ li {
 }
 
 .project-list h3 a {
-    color: var(--accent-color);
+    color: var(--heading-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .project-list h3 a:hover {
-    color: var(--text-color);
+    color: var(--accent-color);
 }
 
 .project-status {
